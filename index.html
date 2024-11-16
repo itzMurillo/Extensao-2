@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wise Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Copperplate+Gothic+Light&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Previsão do Tempo</h1>
+        <div class="informacao">
+            <h2>Como utlizar:</h2>
+            <p>Este site permite consultar a previsão do tempo de qualquer cidade do mundo! Para realizar a pesquisa, basta digitar o nome da cidade na caixa de pesquisa e clicar em <strong>"Obter Clima"</strong>. Se você não souber o nome exato da cidade, pode clicar em <strong>"Minha Localização"</strong> para obter a previsão com base na sua localização atual.</p>
+        
+            <p>Se houver mais de uma cidade com o mesmo nome (como "Paris"), recomendamos que você inclua também o nome do país. Exemplo: <strong>"Paris, França"</strong> ou <strong>"São Paulo, Brasil"</strong> para garantir que você receba os dados corretos.</p>
+        
+            <h3>O que cada botão faz:</h3>
+            <ul>
+                <li><strong>"Obter Clima"</strong>: Pesquisa a previsão do tempo da cidade digitada.</li>
+                <li><strong>"Minha Localização"</strong>: Usa a sua localização atual (se autorizada) para obter a previsão do tempo no local onde você está.</li>
+            </ul>
+        </div>
+        <div class="input-group mb-3">
+            <input type="text" id="localizacao" class="form-control" placeholder="Digite a localização">
+            <div class="input-group-append">
+                <button id="obterClima" class="btn btn-primary">Obter Clima</button>
+                <button id="minhaLocalizacao" class="btn btn-secondary">Minha Localização</button>
+            </div>
+        </div>
+        <ul id="sugestoes" class="list-group" style="display: none;"></ul> 
+        <div class="row mt-4" id="diasDaSemana"></div>
+        <div id="previsaoDia" class="mt-4"></div>
+        <div id="recomendacoesRoupas"></div>
+    </div>
+
+    <footer>
+        <i><p>Desenvolvedores:</p></i>
+        <b><p>Murillo G. Moresco (RA: 60000080)&nbsp;&nbsp;&nbsp;&nbsp;Marllon G. Silva (RA: 60001928)&nbsp;&nbsp;&nbsp;&nbsp;Luiz G. Souza (RA: 60000067)&nbsp;&nbsp;&nbsp;&nbsp;Pedro H. Becker (RA: 60003244)</p></b>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

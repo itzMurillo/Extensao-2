@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('iamgens/sky.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px; 
+}
+
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    max-width: 1000px; 
+}
+
+h1 {
+    font-family: copperplate;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    color: #333;
+}
+
+.informacao {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    text-align: left;
+}
+
+.informacao h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.informacao h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #333;
+}
+
+.informacao p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.informacao ul {
+    font-size: 16px;
+    color: #555;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.informacao strong {
+    color: #007BFF;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007BFF; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; 
+}
+
+#sugestoes {
+    position: absolute;
+    z-index: 1000;
+    width: calc(100% - 20px);
+    max-width: 400px;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    display: none;
+    margin-top: 5px;
+}
+
+.list-group-item {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #f1f1f1;
+}
+
+.bloquinho {
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.bloquinho:hover {
+    transform: scale(1.05);
+}
+
+#previsaoDia {
+    margin-top: 20px; 
+    background: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.weather-item {
+    margin-bottom: 10px; 
+}
+
+.recomendacao-roupas {
+    border: 1px solid #007BFF; 
+    background-color: rgba(0, 123, 255, 0.1); 
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px; 
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: auto; 
+}
